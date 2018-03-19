@@ -1,15 +1,36 @@
-$navbar-default-bg: #42a82b;
+$navbar-default-bg: #ededed;
+
+@font-face {
+    font-family: 'Emilys Candy';
+    src: asset-url('fonts/emilys-candy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
 #logo {
   float: left;
-  font-size: 1.7em;
+  font-size: 2.0em;
   color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: bold; 
+  // text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  font-family: "Emilys Candy";
+}
+
+#logo-color-1 {
+  color: #3a92d6;
+}
+
+#logo-color-2 {
+  color: #d67bb4;
+}
+
+#logo-color-3 {
+  color: #92bd13;
 }
 
 #logo:hover {
@@ -24,11 +45,16 @@ $navbar-default-bg: #42a82b;
 .jumbotron {
   background-image: asset-url('new_cover_page.jpg');
   background-size: cover;
+  height: 500px;
   // top: 0;
   // left: 0;
   // bottom: 0;
   // right: 0;
   // position: absolute;
+}
+
+.nav-sep {
+  border-left: 1px solid #42a82b;
 }
 
 .jumbotron h1 {
@@ -38,6 +64,8 @@ $navbar-default-bg: #42a82b;
   letter-spacing: 2px;
   font-weight: bold;
   text-shadow: 0px 2px 5px #000000;
+  font-family: "Emilys Candy";
+  font-size: 7.0em;
 }
 
 .btn-xlarge {
@@ -50,7 +78,7 @@ $navbar-default-bg: #42a82b;
 }
 
 .nav > li > a { 
-  color: #fff !important; 
+  color: #3a92d6 !important; 
 }
 
 footer {
@@ -76,6 +104,11 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 15px;
+}
+
+
+.logo-color-1 {
+  
 }
 
 // Will auto expand dropdown on hover
