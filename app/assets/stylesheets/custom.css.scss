@@ -127,11 +127,14 @@ footer ul li {
 }
 
 
-.logo-color-1 {
-  
-}
-
 // Will auto expand dropdown on hover
 // .hover-expander:hover .hover-expandable {
 //   display: block;
 // }
+
+
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
