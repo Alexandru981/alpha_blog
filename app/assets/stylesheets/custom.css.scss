@@ -7,6 +7,15 @@ $navbar-default-bg: #ededed;
     font-style: normal;
 }
 
+@media(max-width: 766px) {
+  .overflow-hidden {
+    overflow-x: hidden;
+  }
+  
+  .overflow-visible {
+    overflow-x: visible;
+  }
+}
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
